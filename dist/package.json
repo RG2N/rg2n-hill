@@ -1,6 +1,6 @@
 {
   "name": "rg2n-hill",
-  "version": "12.2.13",
+  "version": "1.0.2",
   "description": "A Brick Hill legacy server written in node.js, modified by RG2N",
   "main": "./dist/src/index.js",
   "dependencies": {
@@ -25,7 +25,7 @@
     "start": "node ./dist/src/index.js",
     "build-docs": "npx typedoc src/index.ts && npx typedoc src/index.ts --json ./public/documentation.json"
   },
-  "author": "Meta_data",
+  "author": "RG2N",
   "license": "GPL-3.0",
-  "repository": "gitlab:brickhill/open-source/node-hill"
+  "repository": "github.com/RG2N/rg2n-hill"
 }

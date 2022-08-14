@@ -286,11 +286,11 @@ function startServer(settings) {
         _getLatestnpmVersion()
             .then((package_version) => {
             if (package_version !== Game_1.default.version) {
-                console.warn(`WARNING: node-hill version is out of date. [Latest version: ${package_version}]. \nRun \`npm i node-hill@latest\` to resolve.`);
+                //console.warn(`WARNING: node-hill version is out of date. [Latest version: ${package_version}]. \nRun \`npm i node-hill@latest\` to resolve.`);
             }
         })
             .catch(() => {
-            console.warn('WARNING: Failure while checking for latest node-hill version.');
+            //console.warn('WARNING: Failure while checking for latest node-hill version.');
         });
         console.log(`<<<Port: ${Game_1.default.port} | Game: ${Game_1.default.gameId} | Map: ${Game_1.default.map}>>>`);
         require("./server");

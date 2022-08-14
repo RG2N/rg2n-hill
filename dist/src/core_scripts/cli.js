@@ -1,5 +1,3 @@
-const { default: Game } = require("rg2n-hill/dist/src/class/Game");
-
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -30,6 +28,7 @@ function lineHandler(line) {
         else if (line === "restart") {
             console.info("Restarting.");
             Game.clearMap();
+            Game.loadBrk(Game.serverSettings.map);
         }
         try {
             const data = yield eval(`(async() => { return "${line}" })()`);

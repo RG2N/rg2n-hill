@@ -25,7 +25,7 @@
     "start": "node ./dist/src/index.js",
     "build-docs": "npx typedoc src/index.ts && npx typedoc src/index.ts --json ./public/documentation.json"
   },
-  "author": "Meta_data",
+  "author": "RG2N",
   "license": "GPL-3.0",
   "repository": "github.com/RG2N/rg2n-hill"
 }
