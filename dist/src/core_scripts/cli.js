@@ -29,6 +29,7 @@ function lineHandler(line) {
             console.info("Restarting.");
             Game.clearMap();
             Game.loadBrk(Game.serverSettings.map);
+            console.info("Restart completed.");
         }
         else if (line.startsWith("args ")) {
             argsP = line.substring(5);
