@@ -30,6 +30,19 @@ function lineHandler(line) {
             Game.clearMap();
             Game.loadBrk(Game.serverSettings.map);
         }
+        else if (line.startsWith("args ")) {
+            argsP = line.substring(5);
+            const args = argsP.split(" ");
+            args.forEach(arg => {
+                console.info(arg)
+            });
+        }
+        else if (line.startsWith("kickall ")) {
+            arg = line.substring(8);
+            Game.players.forEach(player => {
+                player.kick(arg); 
+            });
+        }
         try {
             const data = yield eval(`(async() => { return "${line}" })()`);
             if (typeof data !== "undefined")
